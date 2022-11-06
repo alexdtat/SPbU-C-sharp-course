@@ -2,6 +2,7 @@
 {
     public static class BubbleSort
     {
+        // Sorting int array with bubble sort.
         public static IEnumerable<int> Sort(int[] sortedArray)
         {
             for (var i = 0; i < sortedArray.Length; i++) {

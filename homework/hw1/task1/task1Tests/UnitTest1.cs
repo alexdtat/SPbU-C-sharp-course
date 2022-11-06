@@ -4,6 +4,7 @@ namespace task1Tests;
 
 public class Tests
 {
+    // Test with hardcoded array of ints from 10 down to 1.
     [Test]
     public void DefaultTest()
     {
@@ -12,6 +13,7 @@ public class Tests
         Assert.That(expected, Is.EqualTo(BubbleSort.Sort(array)));
     }
 
+    // Test with sorting 10-elements array of random ints from -100 to 100. Repeated 25 times.
     [Test]
     [Repeat(25)]
     public void RandomTest()
