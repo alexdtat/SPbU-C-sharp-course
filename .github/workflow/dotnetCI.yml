@@ -22,5 +22,5 @@ jobs:
       run: $slnInFolder = Get-ChildItem -Recurse -Filter '*.sln'; foreach ($file in $slnInFolder) {dotnet test $file.FullName}
       shell: pwsh
       
-      - name: .NET format
-        run: $slnInFolder = Get-ChildItem -Recurse -Filter '*.sln'; foreach ($file in $slnInFolder) {dotnet format $file.FullName}
+    - name: .NET format
+      run: $slnInFolder = Get-ChildItem -Recurse -Filter '*.sln'; foreach ($file in $slnInFolder) {dotnet format $file.FullName}
