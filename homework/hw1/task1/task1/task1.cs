@@ -1,7 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using task1;
 
-using task1;
-
+Console.WriteLine("Please, input array for sorting. Use spaces as delimiters:");
 try
 {
     var array = Console.ReadLine()
@@ -12,6 +11,7 @@ try
 
     if (array != null)
     {
+        Console.WriteLine("Sorted array:");
         foreach (var element in BubbleSort.Sort(array))
         {
             Console.Write(element + " ");
