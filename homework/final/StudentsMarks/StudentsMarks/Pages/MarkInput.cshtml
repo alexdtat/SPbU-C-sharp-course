@@ -1,0 +1,27 @@
+﻿@page
+@model StudentsMarks.Pages.MarkInputModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>AddMark</title>
+</head>
+<body>
+<form method="post">
+    <p>
+        <label asp-for="StudentMark.Name">Student's name:</label>
+        <input asp-for="StudentMark.Name"/>
+    </p>
+    <p>
+        <label asp-for="StudentMark.Course">Course:</label>
+        <input asp-for="StudentMark.Course"/>
+    </p>
+    <p>
+        <label asp-for="StudentMark.Mark">Mark:</label>
+        <input asp-for="StudentMark.Mark"/>
+    </p>
+    <button type="submit">Add stduent's mark</button>
+</form>
+</body>
+</html>
