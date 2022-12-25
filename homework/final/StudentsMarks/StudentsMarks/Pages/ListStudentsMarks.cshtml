@@ -1,0 +1,36 @@
+﻿@page
+@model StudentsMarks.Pages.ListStudentsMarksModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>ListStudentsMarks</title>
+    </head>
+    <body>
+    <h2>List of students with their marks for subjects:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var studentMark in Model.StudentMarks) {
+                <tr>
+                    <td>@studentMark.Name</td>
+                    <td>@studentMark.Course</td>
+                    <td>@studentMark.Mark</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </body>
+</html>
